@@ -4,7 +4,8 @@ pipeline {
 
     stage('git') {
       steps {
-        git url: 'https://github.com/michaelparfait/tp-juin-ci-cd.git'
+        git branch: 'main',
+            url: 'https://github.com/michaelparfait/tp-juin-ci-cd.git'
       }
     }
 
